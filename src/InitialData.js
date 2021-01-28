@@ -41,4 +41,8 @@ var studentArray = [{
     division: 'A'
 }]
 
-module.exports = studentArray;
+
+module.exports.studentArray = studentArray;
+module.exports.push2Arr = function(val){module.exports.studentArray.push(val);};
+module.exports.splice2Arr = function(id, q){module.exports.studentArray.splice(id, q);};
+
